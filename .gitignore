@@ -1,0 +1,11 @@
+# The dist folder is published to npm, not tracked in git
+dist
+node_modules
+tmp/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Output of the regtest integration run
+test/regtest/out/

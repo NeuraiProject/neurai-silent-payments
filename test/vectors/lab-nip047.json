@@ -1,0 +1,139 @@
+{
+ "description": "NIP-047 profile 0 vectors from the Neurai silent payments lab, checked against the native node (regtest). Outpoints are serialized: txid in internal byte order followed by vout as LE32.",
+ "network": "regtest",
+ "identity": {
+  "mnemonic": "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about",
+  "passphrase": "SP-LAB-R disposable"
+ },
+ "vectors": [
+  {
+   "scenario": "single_input",
+   "context_N": "025241e503402b81548ea32dbfd7b670829b30fb83220a92ad9804ad893ecdce710003",
+   "input_privs_fixture": [
+    "0c46855f3a9062ce3baba47cbaf0814d1d2b812d40c2f4c2cb79e82ba057faec"
+   ],
+   "outpoints": [
+    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa00000000"
+   ],
+   "B_scan": "0387aed1e3a07f33f03dffa404063072d6f06980a78ea3c241ab7863d0d339b5ca",
+   "B_spend": "031d1fcccaa2a28356358ba6c5f4dab529dfc16c55e67c990958904148e7c35526",
+   "code": "tnsp1qqgpc0tk3uws87vls8hl6gpqxxpeddurfszncag7zgx4hsc7s6vumtjsrr50uej4z52p4vdvt5mzlfk44980uzmz4ue7fjz2cjpq53e7r25nqzs6e6l",
+   "A": "0242801399239bb00bb2fdae7ac874804ec8385e200e438748e4fc35dc8bc5ec1b",
+   "outpoint_min": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa00000000",
+   "h": "874fb474a1ecba6df02f765b63f7e6736a9fb6a1f2c09761b4feffc1caac5b5b",
+   "groups": [
+    {
+     "S": "02be440d3feec075011a3f16c7df98ee28947db89120474887ae99acb79e3cfdad",
+     "payments": [
+      {
+       "k": 0,
+       "t": "4e0138b11e832b0d1a671cfbf44f29d1d53fd1478fcc4527c50e50fa5376b3b9",
+       "P": "037832a7404253ada70122ca48fb4d686a2ae8e47c0bb9f416403489eb6fba78d7",
+       "C": "4e10a9875e7661baac493895bba5152fded967ab92ad06011f7c60356e5ca3f8",
+       "spk": "53204e10a9875e7661baac493895bba5152fded967ab92ad06011f7c60356e5ca3f8"
+      }
+     ]
+    }
+   ],
+   "addresses": [
+    "tnq1rfcg2np67wesm4tzf8z2mhfg49l0djeatj2ksvqgl03sr2mju50uq2rcjju"
+   ]
+  },
+  {
+   "scenario": "three_inputs_three_payments",
+   "context_N": "025241e503402b81548ea32dbfd7b670829b30fb83220a92ad9804ad893ecdce710003",
+   "input_privs_fixture": [
+    "0c46855f3a9062ce3baba47cbaf0814d1d2b812d40c2f4c2cb79e82ba057faec",
+    "77c1f8a5e6981b254d88ac15c31499dcf28f30d00e7a47f4cd7ead94c2731485",
+    "8713e9af79b5158c740d7343923f3c682805eee4771fe72cf431316abb2bcd3d"
+   ],
+   "outpoints": [
+    "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb01000000",
+    "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc0107000000",
+    "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb00000000"
+   ],
+   "B_scan": "0387aed1e3a07f33f03dffa404063072d6f06980a78ea3c241ab7863d0d339b5ca",
+   "B_spend": "031d1fcccaa2a28356358ba6c5f4dab529dfc16c55e67c990958904148e7c35526",
+   "code": "tnsp1qqgpc0tk3uws87vls8hl6gpqxxpeddurfszncag7zgx4hsc7s6vumtjsrr50uej4z52p4vdvt5mzlfk44980uzmz4ue7fjz2cjpq53e7r25nqzs6e6l",
+   "A": "02b246ee6b042f255d0a7f368c6be1e1ca66d1aa1fbc3d4f925564b39a3a6d0df0",
+   "outpoint_min": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb00000000",
+   "h": "054457a5dbbb025fc61411e76f0b5051711ade3e79218d2bb0b74ec29671a37e",
+   "groups": [
+    {
+     "S": "03f0e85fa6fbd9cb43cd4afb8ee636b389c560fc0e6a37a93e2932ece641e4894e",
+     "payments": [
+      {
+       "k": 0,
+       "t": "4ae1db273ab1e614c8ddc984a3b06d369f3f38abd1836200fb47d3ed2229b5ec",
+       "P": "020465c6798b9a3f9aa16c4a97fb023ffc1cf6ffab8e00b1a46f7af86c29b475ae",
+       "C": "6b303d07c36cc2ae5db9bdd301a2bdc7246adf441496b6f0105382000d481671",
+       "spk": "53206b303d07c36cc2ae5db9bdd301a2bdc7246adf441496b6f0105382000d481671"
+      },
+      {
+       "k": 1,
+       "t": "6e75720905fb5a4080a8540f8de491be5177da5a034a8f3d7fcf9dbf65d5ac68",
+       "P": "0391a7f01319bf5f0bfbd867556fc4665b9b01e02db50734c4be3896cba384ae4e",
+       "C": "e19cb8a88a45079d373d333ac7045537d654d9b6189bcad13128e38620d7133d",
+       "spk": "5320e19cb8a88a45079d373d333ac7045537d654d9b6189bcad13128e38620d7133d"
+      },
+      {
+       "k": 2,
+       "t": "289bb5b6bafa9dcbfb2cc977f598ea5f91b86d49838434b40d6a079c124d0500",
+       "P": "02b65f76a106fc7088b422d3ff3f1157c5a39c431d933f5a035a1659d27c5e5c45",
+       "C": "b523e21ff2082993cf65532ec2c68ab665af8884550fa56904887b5e762a185b",
+       "spk": "5320b523e21ff2082993cf65532ec2c68ab665af8884550fa56904887b5e762a185b"
+      }
+     ]
+    }
+   ],
+   "addresses": [
+    "tnq1rdvcr6p7rdnp2uhdehhfsrg4acujx4h6yzjttduqs2wpqqr2gzecscku4f2",
+    "tnq1ruxwt32y2g5re6deaxvavwpz4xlt9fkdkrzdu45f39r3cvgxhzv7shpy07d",
+    "tnq1rk537y8ljpq5e8nm92vhv9352kej6lzyy258626gy3pa4ua32rpdsumv5uu"
+   ]
+  },
+  {
+   "scenario": "same_key_twice",
+   "context_N": "025241e503402b81548ea32dbfd7b670829b30fb83220a92ad9804ad893ecdce710003",
+   "input_privs_fixture": [
+    "c9d5a9b0f89061c47ede5d332935cb994ac4ee6c6b5775cec11d96459e8ba918",
+    "c9d5a9b0f89061c47ede5d332935cb994ac4ee6c6b5775cec11d96459e8ba918"
+   ],
+   "outpoints": [
+    "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd00000000",
+    "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd01000000"
+   ],
+   "B_scan": "0387aed1e3a07f33f03dffa404063072d6f06980a78ea3c241ab7863d0d339b5ca",
+   "B_spend": "031d1fcccaa2a28356358ba6c5f4dab529dfc16c55e67c990958904148e7c35526",
+   "code": "tnsp1qqgpc0tk3uws87vls8hl6gpqxxpeddurfszncag7zgx4hsc7s6vumtjsrr50uej4z52p4vdvt5mzlfk44980uzmz4ue7fjz2cjpq53e7r25nqzs6e6l",
+   "A": "0248f0cf4ebd6a00de5c83ae13c206d93d2721258b912f977856b5e293599b7f86",
+   "outpoint_min": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd00000000",
+   "h": "94480945966c2f5a371c46a7a50a76bc6be38a2366b7b14359e9115926a9b7de",
+   "groups": [
+    {
+     "S": "03a489c001109897d768838d56dc59c270c8b37f4f2298f20fbbd8c4f01c146a63",
+     "payments": [
+      {
+       "k": 0,
+       "t": "5fb098816d3e99f0123d8519e3d11680348fc99aca02c44c9f024b40e2489338",
+       "P": "02c20b9c4948eda57594774a3567190b02cc09e82cd8ec301d2198557fb978704c",
+       "C": "fc75e32c047cc40c0c732cd85d28046b48a14a5a66d9ab7f9314e227bcb3a1a2",
+       "spk": "5320fc75e32c047cc40c0c732cd85d28046b48a14a5a66d9ab7f9314e227bcb3a1a2"
+      },
+      {
+       "k": 1,
+       "t": "0101d25e269fee6bd2bb789cdf4d253680d76984fbfdfbf139db20cb6380360d",
+       "P": "029f9393ef241b111d1df05c9eeb2a9cc4caa56b9767da480939fe2714fc1c49e2",
+       "C": "a831f39751308da49e4605e2b7139a4dedaf99ffd71d3754c185eee43b6324c1",
+       "spk": "5320a831f39751308da49e4605e2b7139a4dedaf99ffd71d3754c185eee43b6324c1"
+      }
+     ]
+    }
+   ],
+   "addresses": [
+    "tnq1rl367xtqy0nzqcrrn9nv962qyddy2zjj6vmv6klunzn3z009n5x3q0c43kt",
+    "tnq1r4qcl8963xzx6f8jxqh3twyu6fhk6lx0l6uwnw4xpshhwgwmrynqsmfjlmg"
+   ]
+  }
+ ]
+}
