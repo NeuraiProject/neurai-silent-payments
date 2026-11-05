@@ -36,7 +36,7 @@ export const NETWORKS: Readonly<Record<NetworkName, Readonly<NetworkParams>>> = 
     codeHrp: "tnsp",
     addressHrp: "tnq",
     coinType: 1,
-    genesisHash: "0000008b384aeffecdab182575dc4e86c9f07f90318c65088532660ed9a8a021",
+    genesisHash: "000000c710413a4265a996d30c86043aedef6a563900f1bc43fea61d5b2dc77d",
     wifPrefix: 239,
   }),
   regtest: Object.freeze({

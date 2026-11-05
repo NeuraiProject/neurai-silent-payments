@@ -1,6 +1,6 @@
 {
   "name": "@neuraiproject/neurai-silent-payments",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "NIP-047 silent payments for Neurai (strict ECDSA witness v3): payment codes, sender outputs and receiver scanning",
   "type": "module",
   "main": "./dist/index.cjs",
